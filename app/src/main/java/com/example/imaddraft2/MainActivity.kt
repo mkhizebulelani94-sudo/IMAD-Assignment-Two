@@ -19,10 +19,10 @@ import com.example.imaddraft2.ui.theme.IMADDraft2Theme
 class MainActivity : ComponentActivity() {
     //Simple arrays
     private val questions = arrayOf(
-        "T20 cricket is the most popular format in the world"
-        "Virat Kohli has 83 hundreds in all formats"
-        "Ab de Villiars has a T20 hundred"
-        "India is the most successful cricketing nation in history"
+        "T20 cricket is the most popular format in the world",
+        "Virat Kohli has 83 hundreds in all formats",
+        "Ab de Villiars has a T20 hundred",
+        "India is the most successful cricketing nation in history",
         "The Proteas won the World Test Championship in 2025"
     )
 
