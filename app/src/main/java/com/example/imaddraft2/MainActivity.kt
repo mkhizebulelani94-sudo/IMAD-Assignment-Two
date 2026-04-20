@@ -30,15 +30,23 @@ class MainActivity : ComponentActivity() {
         true, true, false, false, true
     )
 
-    private var index = 0
+    private var currentQuestion = 0
     private var score = 0
-    private var answered = false
+    private var feedbackList = mutableListOf<String>()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        enableEdgeToEdge()
-        setContentView(R.layout.activity_welcome)
+        showWelcomeScreen()
+    }
 
+    private fun showWelcomeScreen() {
+        setContentView(R.layout.activity_welcome)
+        val startButton = findViewById<Button>(R.id.btnStart)
+        startButton.setOnClickListener {
+            currentQuestion = 0
+            score = 0
+        }
     }
 }
+
 
